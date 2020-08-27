@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2105190-2911-4975-85B3-ACBF67B86694}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CAS.EntityModel</RootNamespace>
+    <AssemblyName>CAS.EntityModel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\AdditionalRoadSurfaceConditionType.cs" />
+    <Compile Include="Models\AlcoholInvolvedType.cs" />
+    <Compile Include="Models\ApplicationConfiguration.cs" />
+    <Compile Include="Models\ArbitrationControl.cs" />
+    <Compile Include="Models\BarrierLocationType.cs" />
+    <Compile Include="Models\BarrierType.cs" />
+    <Compile Include="Models\BreathScreeningTestType.cs" />
+    <Compile Include="Models\C2016idControl.cs" />
+    <Compile Include="Models\C2017idControl.cs" />
+    <Compile Include="Models\C2018idControl.cs" />
+    <Compile Include="Models\C2019idControl.cs" />
+    <Compile Include="Models\CodedCrash.cs" />
+    <Compile Include="Models\CodedCrashAdditionalRoadSurfaceCondition.cs" />
+    <Compile Include="Models\CodedCrashBarrier.cs" />
+    <Compile Include="Models\CodedCrashComment.cs" />
+    <Compile Include="Models\CodedCrashContributingFactor.cs" />
+    <Compile Include="Models\CodedCrashDiagram.cs" />
+    <Compile Include="Models\CodedCrashDocument.cs" />
+    <Compile Include="Models\CodedCrashDriver.cs" />
+    <Compile Include="Models\CodedCrashDriverSupplementarySafetyDeviceUsed.cs" />
+    <Compile Include="Models\CodedCrashLocation.cs" />
+    <Compile Include="Models\CodedCrashPassenger.cs" />
+    <Compile Include="Models\CodedCrashPassengerSupplementarySafetyDeviceUsed.cs" />
+    <Compile Include="Models\CodedCrashPerson.cs" />
+    <Compile Include="Models\CodedCrashPersonHitBy.cs" />
+    <Compile Include="Models\CodedCrashProcessingStatu.cs" />
+    <Compile Include="Models\CodedCrashRoadMarking.cs" />
+    <Compile Include="Models\CodedCrashRole.cs" />
+    <Compile Include="Models\CodedCrashStatusType.cs" />
+    <Compile Include="Models\CodedCrashTowedVehicle.cs" />
+    <Compile Include="Models\CodedCrashUpdateReasonType.cs" />
+    <Compile Include="Models\CodedCrashVehicle.cs" />
+    <Compile Include="Models\CodedCrashVehicleDevice.cs" />
+    <Compile Include="Models\CodedCrashVehicleObjectsStruck.cs" />
+    <Compile Include="Models\CodedCrashVehiclePermit.cs" />
+    <Compile Include="Models\CodingQueuePrioritySchemeType.cs" />
+    <Compile Include="Models\ContributingFactorFamilyType.cs" />
+    <Compile Include="Models\ContributingFactorGroupType.cs" />
+    <Compile Include="Models\ContributingFactorHint.cs" />
+    <Compile Include="Models\ContributingFactorsInExercise.cs" />
+    <Compile Include="Models\ContributingFactorType.cs" />
+    <Compile Include="Models\CrashHubContext.cs" />
+    <Compile Include="Models\CrashSeverityType.cs" />
+    <Compile Include="Models\C__MigrationHistory.cs" />
+    <Compile Include="Models\C__TransactionHistory.cs" />
+    <Compile Include="Models\DamageAreaType.cs" />
+    <Compile Include="Models\DamageSeverityType.cs" />
+    <Compile Include="Models\DeleteAudit.cs" />
+    <Compile Include="Models\DeleteAuditStaging.cs" />
+    <Compile Include="Models\DirectionType.cs" />
+    <Compile Include="Models\DisqualifiedReasonType.cs" />
+    <Compile Include="Models\DocumentTypeType.cs" />
+    <Compile Include="Models\DriverContributionType.cs" />
+    <Compile Include="Models\DriverLicenseStatusType.cs" />
+    <Compile Include="Models\DriverLicenseTypeType.cs" />
+    <Compile Include="Models\DrugScreeningTestResultType.cs" />
+    <Compile Include="Models\DrugScreeningTestType.cs" />
+    <Compile Include="Models\DrugsInvolvedType.cs" />
+    <Compile Include="Models\DrugTypeType.cs" />
+    <Compile Include="Models\EthnicityType.cs" />
+    <Compile Include="Models\EvidentialBloodTestType.cs" />
+    <Compile Include="Models\EvidentialBreathTestType.cs" />
+    <Compile Include="Models\Exercise.cs" />
+    <Compile Include="Models\ExerciseQualifyingCrash.cs" />
+    <Compile Include="Models\GenderType.cs" />
+    <Compile Include="Models\HintBreach.cs" />
+    <Compile Include="Models\HintType.cs" />
+    <Compile Include="Models\Holiday.cs" />
+    <Compile Include="Models\InjuryCauseType.cs" />
+    <Compile Include="Models\InjurySeverityType.cs" />
+    <Compile Include="Models\IntersectionMidblockType.cs" />
+    <Compile Include="Models\JunctionTypeType.cs" />
+    <Compile Include="Models\KeywordToCfHelper.cs" />
+    <Compile Include="Models\Log.cs" />
+    <Compile Include="Models\MovementCodeHint.cs" />
+    <Compile Include="Models\MovementCodesInExercise.cs" />
+    <Compile Include="Models\MovementCodeType.cs" />
+    <Compile Include="Models\MovementGroupType.cs" />
+    <Compile Include="Models\NaturalLightTypeType.cs" />
+    <Compile Include="Models\OffRoadLocationType.cs" />
+    <Compile Include="Models\OtherPartyType.cs" />
+    <Compile Include="Models\OtherPassengerLocationType.cs" />
+    <Compile Include="Models\OverseasDriverStatusType.cs" />
+    <Compile Include="Models\PeerReviewSetting.cs" />
+    <Compile Include="Models\PrimarySurfaceConditionType.cs" />
+    <Compile Include="Models\RailCrossingTypeType.cs" />
+    <Compile Include="Models\ReasonForSpeedTooFastType.cs" />
+    <Compile Include="Models\ReasonLicenseBreachedType.cs" />
+    <Compile Include="Models\RecordedLocationTypeType.cs" />
+    <Compile Include="Models\RejectionCategoryType.cs" />
+    <Compile Include="Models\RestraintUsedType.cs" />
+    <Compile Include="Models\RoadCurvatureType.cs" />
+    <Compile Include="Models\RoadFeatureType.cs" />
+    <Compile Include="Models\RoadGradientType.cs" />
+    <Compile Include="Models\RoadMarkingTypeType.cs" />
+    <Compile Include="Models\RoadSurfaceTypeType.cs" />
+    <Compile Include="Models\RoadTypeType.cs" />
+    <Compile Include="Models\RoadUserTypeType.cs" />
+    <Compile Include="Models\SeatLocationPositionType.cs" />
+    <Compile Include="Models\SeatLocationRowType.cs" />
+    <Compile Include="Models\SocialCost.cs" />
+    <Compile Include="Models\SpecialPurposeLaneType.cs" />
+    <Compile Include="Models\StreetLightStatusType.cs" />
+    <Compile Include="Models\StruckObjectType.cs" />
+    <Compile Include="Models\StruckObjectTypeType.cs" />
+    <Compile Include="Models\SupplementarySafetyDeviceType.cs" />
+    <Compile Include="Models\SystemConfiguration.cs" />
+    <Compile Include="Models\TcrAdditionalRoadSurfaceCondition.cs" />
+    <Compile Include="Models\TcrBarrier.cs" />
+    <Compile Include="Models\TcrComment.cs" />
+    <Compile Include="Models\TcrCrash.cs" />
+    <Compile Include="Models\TcrCrashDiagram.cs" />
+    <Compile Include="Models\TcrCrashIdentifier.cs" />
+    <Compile Include="Models\TcrDriver.cs" />
+    <Compile Include="Models\TcrDriverSupplementarySafetyDeviceUsed.cs" />
+    <Compile Include="Models\TcrLocation.cs" />
+    <Compile Include="Models\TcrPassenger.cs" />
+    <Compile Include="Models\TcrPassengerSupplementarySafetyDeviceUsed.cs" />
+    <Compile Include="Models\TcrPdfPrintingConfiguration.cs" />
+    <Compile Include="Models\TcrPerson.cs" />
+    <Compile Include="Models\TcrPoliceStatusType.cs" />
+    <Compile Include="Models\TcrProcessingStatu.cs" />
+    <Compile Include="Models\TcrRoadMarking.cs" />
+    <Compile Include="Models\TcrStatusType.cs" />
+    <Compile Include="Models\TcrTowedVehicle.cs" />
+    <Compile Include="Models\TcrVehicle.cs" />
+    <Compile Include="Models\TcrVehicleDevice.cs" />
+    <Compile Include="Models\TcrVehiclePermit.cs" />
+    <Compile Include="Models\TowedVehicleTypeType.cs" />
+    <Compile Include="Models\TrafficControlType.cs" />
+    <Compile Include="Models\UserProfile.cs" />
+    <Compile Include="Models\UsersCompletedCrashInExercise.cs" />
+    <Compile Include="Models\UsersInExercise.cs" />
+    <Compile Include="Models\VehicleDeviceType.cs" />
+    <Compile Include="Models\VehicleLoadType.cs" />
+    <Compile Include="Models\VehiclePermitTypeType.cs" />
+    <Compile Include="Models\VehicleStateType.cs" />
+    <Compile Include="Models\VehicleTypeType.cs" />
+    <Compile Include="Models\VehicleUsageType.cs" />
+    <Compile Include="Models\WeatherConditionAType.cs" />
+    <Compile Include="Models\WeatherConditionBType.cs" />
+    <Compile Include="Models\YesNoUnknownType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GeneratedModel\" />
+    <Folder Include="Interface\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

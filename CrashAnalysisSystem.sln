@@ -1,9 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1231
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAS.EntityModel", "CAS.EntityModel\CAS.EntityModel.csproj", "{D2105190-2911-4975-85B3-ACBF67B86694}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAS.ConsoleUI", "CAS.ConsoleUI\CAS.ConsoleUI.csproj", "{1CCD0BFB-80F0-43CD-A261-4762EC2F8CB7}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2105190-2911-4975-85B3-ACBF67B86694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2105190-2911-4975-85B3-ACBF67B86694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2105190-2911-4975-85B3-ACBF67B86694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2105190-2911-4975-85B3-ACBF67B86694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CCD0BFB-80F0-43CD-A261-4762EC2F8CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CCD0BFB-80F0-43CD-A261-4762EC2F8CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CCD0BFB-80F0-43CD-A261-4762EC2F8CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CCD0BFB-80F0-43CD-A261-4762EC2F8CB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
